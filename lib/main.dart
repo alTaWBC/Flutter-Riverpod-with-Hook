@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:hook_riverpod/UI/game_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'UI/game_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ProviderScope(child: MyApp()));
 }
 
+/// Application start
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
