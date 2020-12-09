@@ -17,7 +17,7 @@ class GameScreen extends HookWidget {
     /// Game state
     final vm = useProvider(gameProvider);
     useEffect(() {
-      Future.microtask(() => vm.initState(level));
+      Future.microtask(() => vm);
     });
     return Scaffold(
       backgroundColor: Color(0xFFeff1f5),

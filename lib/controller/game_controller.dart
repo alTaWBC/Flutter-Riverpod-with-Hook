@@ -28,7 +28,9 @@ class GameController extends ChangeNotifier {
   Timer timer;
 
   /// Default constructor
-  GameController();
+  GameController() {
+    initState(8);
+  }
 
   /// Starts user Timer
   void startTime() {
@@ -98,4 +100,5 @@ class GameController extends ChangeNotifier {
   }
 }
 
+/// Game State
 final gameProvider = ChangeNotifierProvider<GameController>((ref) => GameController());
